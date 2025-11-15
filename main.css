@@ -5,5 +5,26 @@
     margin-right: 15px;
 }
 .card{
-    
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border-radius: 10px;
+    border: 2px solid transparent;
 }
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+  animation: panZoom 5s ease-in-out infinite;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 23, 48, 0.4);
+}
+.card:hover img {
+  transform: scale(1.05) translateX(-5px);
+}
+.footer{
+    color: white;
+}
+
