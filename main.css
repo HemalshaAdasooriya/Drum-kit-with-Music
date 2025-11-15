@@ -12,17 +12,13 @@
 }
 .card img {
   width: 100%;
-  border-radius: 10px;
-  transition: 0.3s;
-  animation: 5s ease-in-out infinite;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
-
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 20px rgba(0, 23, 48, 0.4);
-}
-.card:hover img {
-  transform: scale(1.05) translateX(-5px);
 }
 .footer{
     background-attachment: fixed;
