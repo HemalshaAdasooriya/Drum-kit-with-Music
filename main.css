@@ -25,6 +25,7 @@
   transform: scale(1.05) translateX(-5px);
 }
 .footer{
-    color: white;
+    background-attachment: fixed;
+    background-color: #010f1b;
 }
 
