@@ -1,86 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keybord</title>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Playable Piano JavaScript | CodingNepal</title>
     <link rel="stylesheet" href="./keybord.css">
-    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-</head>
-<body class="body">
- <!-- navbar -->
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-bottom shadow fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand fs-3 fw-bold" href="./main.html">MuSicKit</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto fw-bold fs-5">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Recordings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./index.html">Drum Kit</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./keybord.html">Keybord</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
+    
 
-  <!-- <h1 id="title">Keybord</h1>
-  <div class="keys">
-    <button class="a key">a</button>
-    <button class="s key">s</button>
-    <button class="d key">d</button>
-    <button class="f key">f</button>
-    <button class="g key">g</button>
-    <button class="h key">h</button>
-    <button class="j key">j</button> -->
+  </head>
+  <body>
     <div class="wrapper">
-    <header>
-    <h1 id="title">Keybord</h1>
-    <div class="column volume-slider text-white">
-        <span class="volume-label">Volume</span>
-        <input type="range" >
+      <header>
+        <h2>Playable PIANO</h2>
+        <div class="column volume-slider">
+          <span>Volume</span><input type="range" min="0" max="1" value="0.5" step="any">
+        </div>
+        <div class="column keys-checkbox">
+          <span>Show Keys</span><input type="checkbox" checked>
+        </div>
+      </header>
+      <ul class="piano-keys">
+        <li class="key white" data-key="a"><span>a</span></li>
+        <li class="key black" data-key="w"><span>w</span></li>
+        <li class="key white" data-key="s"><span>s</span></li>
+        <li class="key black" data-key="e"><span>e</span></li>
+        <li class="key white" data-key="d"><span>d</span></li>
+        <li class="key white" data-key="f"><span>f</span></li>
+        <li class="key black" data-key="t"><span>t</span></li>
+        <li class="key white" data-key="g"><span>g</span></li>
+        <li class="key black" data-key="y"><span>y</span></li>
+        <li class="key white" data-key="h"><span>h</span></li>
+        <li class="key black" data-key="u"><span>u</span></li>
+        <li class="key white" data-key="j"><span>j</span></li>
+        <li class="key white" data-key="k"><span>k</span></li>
+        <li class="key black" data-key="o"><span>o</span></li>
+        <li class="key white" data-key="l"><span>l</span></li>
+        <li class="key black" data-key="p"><span>p</span></li>
+        <li class="key white" data-key=";"><span>;</span></li>
+      </ul>
     </div>
-    </header>
-
-    <ul class="piano-keys">
-        <li class="key white"><span>a</span></li>
-        <li class="key black"><span>w</span></li>
-        <li class="key white"><span>s</span></li>
-        <li class="key black"><span>e</span></li>
-        <li class="key white"><span>d</span></li>
-        <li class="key black"><span>r</span></li>
-        <li class="key white"><span>f</span></li>
-        <li class="key black"><span>t</span></li>
-        <li class="key white"><span>g</span></li>
-        <li class="key black"><span>y</span></li>
-        <li class="key white"><span>h</span></li>
-        <li class="key black"><span>u</span></li>
-        <li class="key white"><span>j</span></li>
-        <li class="key black"><span>i</span></li>
-        <li class="key white"><span>k</span></li>
-        <li class="key black"><span>o</span></li> 
-        <li class="key white"><span>l</span></li>
-        <li class="key black"><span>p</span></li>
-        <li class="key white"><span>;</span></li>
-    </ul>
-    </div>
-
-
-
-  
-    <script src="./keybord.js"></script>
-  
-</body>
+    <script src="./keybord.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
