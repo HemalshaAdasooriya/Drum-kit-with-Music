@@ -1,8 +1,9 @@
 .body {
   text-align: center;
-  
 }
-
+.nav-item{
+    margin-right: 15px;
+}
 #title {
   font-size: 5rem;
   color: #DBEDF3;
