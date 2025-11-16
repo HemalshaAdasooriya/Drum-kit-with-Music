@@ -1,54 +1,5 @@
-/* .body{
-    background-color: #e3f2fd;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: center; */
-    /* min-height: 100vh;
-    
-    
-}
-.nav-item{
-    margin-right: 15px;
-}
-#title{
-    color: white;
-    font-size: 2rem;
-    font-weight: 600;
-}
-.wrapper{
-    margin: 20px;
-    width: 780px;
-    border-radius: 20px;
-    padding: 35px 40px;
-    background: #141414;
-    justify-content: center;
-}
-.wrapper header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.header .column span{
-    font-weight: 500;
-    margin-left: 15px;
-    font-size: 1.19rem;
-}
-.volume-slider input{
-    accent-color: White;  
-}
-.piano-keys{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-.piano-keys .key{
-    list-style: none;
-    color: white;
-    text-transform: uppercase;
-} */
-
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -165,6 +116,7 @@ header input {
   bottom: 13px;
   color: #888888;
 }
+
 @media screen and (max-width: 815px) {
   .wrapper {
     padding: 25px;
@@ -194,6 +146,7 @@ header input {
     width: 60px;
   }
 }
+
 @media screen and (max-width: 615px) {
   .piano-keys .key:nth-child(13),
   .piano-keys .key:nth-child(14),
