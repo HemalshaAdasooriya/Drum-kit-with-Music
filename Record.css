@@ -5,6 +5,9 @@
     padding: 0%;
     
 }
+.nav-item{
+    margin-right: 15px;
+}
 .main.container{
     margin-top: 100px;
     margin-bottom: 100px;

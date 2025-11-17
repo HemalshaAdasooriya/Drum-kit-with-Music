@@ -4,6 +4,9 @@
 .nav-item{
     margin-right: 15px;
 }
+.hero .container{
+  
+}
 .card{
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     transition: 0.3s;
