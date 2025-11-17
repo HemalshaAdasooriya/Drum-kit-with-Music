@@ -20,8 +20,13 @@
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
     border: none;
     min-height: 40vh;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 23, 48, 0.4);
 }
 .footer{
 
