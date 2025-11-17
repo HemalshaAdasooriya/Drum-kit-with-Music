@@ -34,7 +34,6 @@
 .card{
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     transition: 0.3s;
-    border-radius: 10px;
     border: 2px solid transparent;
 }
 .card img {
