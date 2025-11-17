@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Drum Kit</title>
-  <link rel="stylesheet" href="./styles.css">
+    
+  <title>MuSicKit</title>
+  <link rel="stylesheet" href="./main.css">
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,50 +11,103 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 
-
 </head>
-
 <body class="body">
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-bottom shadow fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand fs-3 fw-bold" href="./main.html">MuSicKit</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto fw-bold fs-5">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./Record.html">Recordings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./index.html">Drum Kit</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./keybord.html">Keybord</a>
-          </li>
-        </ul>
+  
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-bottom shadow text-center fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3 fw-bold" href="./index.html">MuSicKit</a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fw-bold fs-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./Record.html">Recordings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./drum.html">Drum Kit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./keybord.html">Keybord</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+
+    <!-- hero -->
+    <div class="hero container-fluid p-5 mb-4 mt-5 bg-body-tertiary rounded-3"> 
+      <div class="container-fluid py-5 text-white">
+        <h1 class="display-5 fw-bold">🎵 Create. Mix. Perform</h1> 
+        <p class="col-md-8 fs-4">Your music world starts here. Record vocals, mix instruments, play drums, and bring your sound to life with MusicKit.</p> 
+        <button class="btn btn-primary btn-lg" type="button">Explore Tools</button> 
+      </div> 
     </div>
-  </nav>
 
-  <h1 id="title">Drum Kit</h1>
-  <div class="set">
-    <button class="w drum">w</button>
-    <button class="a drum">a</button>
-    <button class="s drum">s</button>
-    <button class="d drum">d</button>
-    <button class="j drum">j</button>
-    <button class="k drum">k</button>
-    <button class="l drum">l</button>
-  </div>
-
-
-  <footer>
-   
-  </footer>
-  <script src="./index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- main -->
+     <div class=" container mt-4 bg-body-tertiary rounded-3"> 
+      <div class="container-fluid py-5"> 
+        <h1 class="display-5 fw-bold pb-5 pt-3">Feel the beat. Live the moment.
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+          <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"/>
+          <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z"/>
+          <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"/>
+        </svg>
+        </h1>
+         
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-xm-1 g-4">
+          <div class="col">
+            <div class="card h-100"><a class="link-underline link-underline-opacity-0" href="./Record.html">
+              <img src="./images/recoardings.jpg" class="card-img-top" width="100%" height="auto" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-dark fs-3 fw-bold" >Recordings</h5>
+                <p class="card-text text-black">Capture your sound with clarity and perfection. Our recording tools help you create high-quality audio with ease—whether you're a beginner or a pro. Just plug in, record your voice or instruments, and bring your music to life with clean, rich sound.</p>
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100"><a class="link-underline link-underline-opacity-0" href="./drum.html">
+              <img src="./images/fullset.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-dark fs-3 fw-bold">Drum Kit</h5>
+                <p class="card-text text-black">Feel the power of every beat. Our drum kits are designed to give you deep, dynamic, and responsive sound. Whether you’re creating rhythms, practicing, or performing, you get the perfect mix of punch, clarity, and groove.</p>
+              </a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100"><a class="link-underline link-underline-opacity-0" href="./keybord.html">
+              <img src="./images/keybord.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-dark fs-3 fw-bold">Keybord</h5>
+                <p class="card-text text-black">Create melodies with smooth, expressive keys. Our keyboards offer rich tones, easy controls, and a natural playing feel—perfect for beginners and musicians who want to explore new sounds.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  
+    <!-- footer -->
+    <div class="footer container-fluid text-white m-0"> 
+      <footer class="py-3 my-0"> 
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3"> 
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li> 
+          <li class="nav-item"><a href="./Record.html" class="nav-link px-2 text-white">Recordings</a></li> 
+          <li class="nav-item"><a href="./drum.html" class="nav-link px-2 text-white">Drum Kit</a></li> 
+          <li class="nav-item"><a href="./keybord.html" class="nav-link px-2 text-white">Keybord</a></li> 
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li> 
+        </ul> 
+        <p class="text-center">© 2025 MuSicKit, Hemalsha Adasooriya</p> 
+      </footer> 
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 </body>
-
 </html>
