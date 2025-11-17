@@ -1,0 +1,36 @@
+.body{
+    background-color: #e8d9fb;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    
+}
+.main.container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #f2eafd91;
+    border-radius: 20px;
+    padding: 30px;
+    align-items: center;
+    min-height: 50vh;
+    justify-content: center;
+    
+}
+.card{
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    min-height: 40vh;
+}
+.footer{
+
+    padding: 20px 0;
+    background-color: #132a39;
+    text-align: center;
+    font-size: 14px;
+    color: #555555;
+    border-top: 1px solid #cccccc;
+    margin-bottom: 0;
+    
+}
